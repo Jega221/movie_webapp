@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MovieCard = ({ movie:
+const Moviecard = ({ movie:
   { title, vote_average, poster_path, release_date, original_language }
 }) => {
   return (
@@ -32,4 +32,4 @@ const MovieCard = ({ movie:
     </div>
   )
 }
-export default MovieCard
+export default Moviecard

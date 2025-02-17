@@ -3,7 +3,7 @@ import Search from './component/Search.jsx'
 import Spinner from './component/Spinner.jsx'
 import { useDebounce } from 'react-use'
 import { getTrendingMovies, updateSearchCount } from './appwrite.js'
-import MovieCard from './component/MovieCard.jsx'
+import Moviecard from './component/Moviecard.jsx'
 
 
 const API_BASE_URL = 'https://api.themoviedb.org/3';
@@ -123,7 +123,7 @@ const App = () => {
           ) : (
             <ul>
               {movieList.map((movie) => (
-                <MovieCard key={movie.id} movie={movie} />
+                <Moviecard key={movie.id} movie={movie} />
               ))}
             </ul>
           )}

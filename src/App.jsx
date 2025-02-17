@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import Search from './component/Search.jsx'
 import Spinner from './component/Spinner.jsx'
-import MovieCard from './component/MovieCard.jsx'
 import { useDebounce } from 'react-use'
 import { getTrendingMovies, updateSearchCount } from './appwrite.js'
+import MovieCard from './component/MovieCard.jsx'
 
 
 const API_BASE_URL = 'https://api.themoviedb.org/3';
